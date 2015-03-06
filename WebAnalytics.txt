@@ -1,2 +1,0 @@
-Introduction:
-Combining the why (intent, motivation, and so forth) with the what (clicks, visitor counts) has to be the cornerstone of any successful actionable web analytics program.
