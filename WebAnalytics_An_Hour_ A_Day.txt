@@ -1,3 +1,22 @@
 Introduction:
 
-Combining the why (intent, motivation, and so forth) with the what (clicks, visitor counts) has to be the cornerstone of any successful actionable web analytics program.
+Combining the why (intent, motivation, and so forth) with the what (clicks, visitor counts) has to be the cornerstone 
+of any successful actionable web analytics program.
+
+Trinity Approach
+Having actionable insights combined with clear goals helps crystalize the efforts of the organization.
+
+The first component of the Trinity mindset is behavior analysis, what we traditionally consider clickstream data analysis.
+Under the Trinity strategy, we will do click density analysis by using the site overlay report. We will massively segment the
+data by n levels to find core nuggets of valuable insights.
+
+The second component of the Trinity mindset is outcomes analysis (Figure 1.8). I fondly call it the so what element.Every website should have a clearly articulated outcome. If you don't have the capacity to measure all nuances of outcomes, the recommendation is to give up on measuring behavior (clickstream) altogether. If you don't have the ability to measure outcomes robustly, all the behavior analysis in the world will do you no good because you will have no idea whether all those graphs in the web analytics application you are using that are going up and to the right added any value to your company. Is it a bit extreme to dump clickstream in favor of measuring outcomes first? Yes. Necessary?
+
+The third and last component of the Trinity mindset is experience (Figure 1.9). This encompasses our dear elusive best friend, why.
+There are many ways to understand the experience of customers on your website. You can leverage surveys and simply ask them, or there are very complex statistical quantitative and qualitative methodologies you can bring to bear. Surveys will allow you to measure customer satisfaction and even predict future behavior (likelihood to buy or to recommend your products or services). A/B Testing and CDI(Customer Driven Innovation)
+
+The Trinity framework can be applied to any kind of web business: e-commerce, support, advocacy, nonprofit, small business, and so on.
+
+
+Data Collection:
+  
