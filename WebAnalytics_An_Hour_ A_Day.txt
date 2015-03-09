@@ -1,4 +1,7 @@
-Introduction:
+WEB ANALYTICS : AN HOUR A DAY
+
+Some vendors : Omniture, Webtrends, Visual Sciences, 
+-----------Introduction:-----------------------------------------------------
 
 Combining the why (intent, motivation, and so forth) with the what (clicks, visitor counts) has to be the cornerstone 
 of any successful actionable web analytics program.
@@ -18,7 +21,33 @@ There are many ways to understand the experience of customers on your website. Y
 The Trinity framework can be applied to any kind of web business: e-commerce, support, advocacy, nonprofit, small business, and so on.
 
 
-Data Collection:
+------------Data Collection: -------------------------------------------------
+
+WebLogs
+Beacons
+Packet Sniffers
+Javascript Tags
+
+Which ever is the data collection strategy ,web analytics tool collect data mostly based on customer clicks
+
+to give a combination of these facets of your website traffic:
+
+
+Visitors (visits, total, unique)
+
+Page views (individual, aggregates, averages)
+
+Time (overall, averages, slices)
+
+Referrers (counts, websites, keywords, trends)
+
+
+An important facet of outcomes analysis is the ability to take key data out of a customer interaction that may or may not be available to a clickstream web analytics tool
+
+True delight comes from knowing how you are doing vis-a-vis your competitors or the industry as a whole. This competitive intelligence is key to helping you understand your performance in the context of the greater web ecosystem and allows you to better understand whether a certain result is caused by eco-system trends or your actions
+ComScore, ISP based Solutions, Search Engine base products are useful ways for Competition Analysis.
+
+-------------Overview of Qualitative Analysis: --------------------------------------
 
 
   
