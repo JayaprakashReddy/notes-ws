@@ -1,0 +1,9 @@
+Nextgen Marketing Analytics Platform
+
+-->Used the PredictionIO, an open source machine learning server for building and deploying predictive engines on production server in a faction of time
+-->Built on Apache Spark, MLib and HBase
+-->Predictive engine design is based on DASE (DataSoruce, Algorithms, Serving, Evaluator) architecture, the MVC for machine learning.
+Engine Functions:
+-->predictive models are trained and deployed.
+-->
+	
