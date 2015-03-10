@@ -5,5 +5,20 @@ Nextgen Marketing Analytics Platform
 -->Predictive engine design is based on DASE (DataSoruce, Algorithms, Serving, Evaluator) architecture, the MVC for machine learning.
 Engine Functions:
 -->predictive models are trained and deployed.
--->
+   D
+   -->Using sparkcontext  events are read from events db
+   -->rating are extracted from the events
+   -->Rating -entityId, ratingValue are extracted 
+   -->Traninig Data is returned
+   -->Data preparator returs PreparedData from the TraningData.
+   A
+   -->ALS algorithm is trained with the PreparedData
+   -->Model is returned by the algorithm.
+
+   S
+   --> Clients submit the Query via REST api for recommendations
+   --> Model is queried and  PredictedResult is pulled from the Model
+   --> PredictResult is Served as per the client requiredment.
+-->Respond to dynamic query
+
 	
