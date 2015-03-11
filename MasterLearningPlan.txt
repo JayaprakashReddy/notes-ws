@@ -22,7 +22,13 @@ R: Machine learning with R ( https://www.safaribooksonline.com/library/view/mach
    R cookbook ( https://www.safaribooksonline.com/library/view/r-cookbook/9780596809287/ch04.html)
    Introduction to Statistical Learning with Applications in R 
 Theory:Datascience for Business (https://www.safaribooksonline.com/library/view/data-science-for/9781449374273/)
-Spark:Advance Analytics with Spark (https://www.safaribooksonline.com/library/view/advanced-analytics-with/9781491912751/)
+
+
+Spark: Advance Analytics with Spark (https://www.safaribooksonline.com/library/view/advanced-analytics-with/9781491912751/)
+
+       Some readup  :  http://www.cakesolutions.net/teamblogs/using-spark-to-analyse-akka-persistence-events-in-cassandra?utm_campaign=Technical%20Blogs&utm_content=12702324&utm_medium=social&utm_source=linkedin
+                       http://docs.prediction.io/
+
 Python:
 
 WebAnalytics
