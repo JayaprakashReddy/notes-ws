@@ -1,0 +1,10 @@
+Project # 3	EBay Learning Network Store, eBay IPC, Chennai                        March 2012 – Jun 2013          
+Designation	Developer
+Client	EBay Inc.
+Description	Recommender systems typically produce a list of recommendations in one of two ways - through collaborative or content-based filtering. EBay India is an e-commerce web application meant for online shoppers in India. This system is built to recommends products to users which they are more likely to be interested in buying.
+Responsibilities	•	Using Sqoop and scripts to move data to personalization system.
+•	Tracking user activity with browser.
+•	Ingesting the logs to HBase clusters using Flume.
+•	Building model for analysis with Mahout.
+•	Running MapReduce jobs for updating the models offline.
+Technologies Used	Hadoop, Mahout, HBase, Flume, Sqoop

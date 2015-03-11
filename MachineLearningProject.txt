@@ -22,3 +22,20 @@ Engine Functions:
 -->Respond to dynamic query
 
 	
+
+Features :
+E-Commerce Recommendation provides personalized recommendation for e-commerce applications with the following features by default: (1) Exclude out-of-stock items (2) Provide recommendation to new users who sign up after the model is trained (3) Recommend unseen items only.
+
+Complimentary Purchase: recommends the complimentary items which most user frequently buy at the same time with one or more items in the query.
+
+Product Ranking: sorts a list of products for a user based on his/her preference. This is ideal for personalizing the display order of product page, catalog, or menu items if you have large number of options. It creates engagement and early conversion by placing products that a user prefers on the top.
+
+Similar Product: recommends products that are "similar" to the input product(s). Similarity is not defined by user or item attributes but by users' previous actions. By default, it uses 'view' action such that product A and B are considered similar if most users who view A also view B. The template can be customized to support other action types such as buy, rate, like..etc.
+
+Classification:is an almost-complete implementation of an engine. PredictionIO's Classification Engine Template has integrated Apache Spark MLlib's Naive Bayes algorithm by default.
+
+Lead Scoring:predicts the probability of an user will convert (conversion event by user) in the current session.
+
+Recommendation:is an almost-complete implementation of an engine. PredictionIO's Recommendation Engine Template has integrated Apache Spark MLlib's Collaborative Filtering algorithm by default. You can customize it easily to fit your specific needs.
+
+Similar Product with Rating:Similar product template with rating support! Used for the MovieLens Demo.
