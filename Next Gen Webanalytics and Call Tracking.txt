@@ -27,14 +27,16 @@ Description
 
 Responsibilities
        -> Contributed to building the framework for clickstream data analysis.
-       -> Major contributor in building the engine then builds and deploys multiple parallel predictive model(s).
-       -> Major contributer for building the customizalble e-Commerce recommendation  engine.
-       -> Contributed to the building of statistical testing (A/B testing ) feature to measure the performance of the new features.
+       -> Contributed to the development of Machine Learning Server which used to build and deploy predictive engines.This server servers REST clients with
+          spray framwork in the backend. And predictive engines are built on typesafe reactive platfrom(Scala, Akka, SBT) .
+          These engines use HBase as data source for model training and evaluation.  
+       -> Major contributor in building different predictive enginesl. Example: e-Commerce recommendation  engine.
+       -> Contributed to the content experiments capability to the plaform with A/B and multivariate testing.
        -> Contributed to integrating  AdServing capability with generic recommendation system.
-       -> Contribute to the creation of framework for online marketing campaign management system.
+       -> Contribute to the creation of framework for online marketing campaign management.
        -> Contributed to the development of features to the portal of 'Call Tracking Analytics' platform.
-       -> Contributed toe
+       -> Involved in the development of web based reporting solution using the D3.js visualization library with Angular.js.
 
 
-Technologies Used :	Java, Scala, Apche Spark, Mlib, HBase, Hadoop, Typsafe platform, Spray,  
+Technologies Used : Java, Scala, Apche Spark, Mlib, HBase, Hadoop, Typsafe platform, Spray,Apache Tomcat, Apache Camel, D3.js, Angular.js 
  
