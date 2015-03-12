@@ -1,0 +1,62 @@
+skills:
+
+skill to build reactive applications.
+skills to  build real predictive models.
+experience of building various model using different algorithms.
+Experience of writing mapreduce programs with concrete realtime usecase.
+Experience of using a NoSql database.
+Experience of using R,Mahout,MLib for building and evaluating datascience solutions
+Expereince of Spark for machine learning
+Experience of using Python for machine learning.
+Experience of using java and J2EE wenservices in recent projects.
+Reporting over the web using D3.js framework.
+experience with ingestion technologies Flume and Kafka.
+experience with splunk for logdata analysis.
+Using Angular.js with MongoDB for a webapplication
+Uage of Tableau for building reporting solution
+Usage of sqoop for importing data from RDBMS to HDFS
+Usage of Hive for data analysis
+technologies:
+
+
+Scala
+Akka
+SBT
+Play
+Spray
+
+Hadoop
+MapReduce
+HBase
+Hive
+Sqoop
+Flume
+MongoDB
+
+Spark
+MLib
+Mahout
+R
+Python
+
+Webanalytics
+Machine Learning:
+Tableau:
+Angular.js
+D3.js
+
+storm : similar to spark
+Kafka: distributed messaging system.
+splunk: logdata analysis system
+java
+JEE
+Webservices
+
+
+
+
+Descriptive Items:
+
+-->building of predictive models such as ..... using the alogorithms .......
+-->REST clients are served by spray framwork and the  recommendation engine is bult on typesafe reactive platfrom(Scala, Akka, SBT) .
+   Reactive Platfom is very much suitable for bigdata analytics solutions as it based on principles :Responsive, Resilient, Elastic, Message Driven 
