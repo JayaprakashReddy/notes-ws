@@ -24,6 +24,8 @@ Engine Functions:
 	
 
 Features :
+
+Ecommerce Recommendation Project 
 E-Commerce Recommendation provides personalized recommendation for e-commerce applications with the following features by default: (1) Exclude out-of-stock items (2) Provide recommendation to new users who sign up after the model is trained (3) Recommend unseen items only.
 
 Complimentary Purchase: recommends the complimentary items which most user frequently buy at the same time with one or more items in the query.
