@@ -16,9 +16,13 @@ Technologies Used	Hadoop, Sqoop, HBase, Hive, Pig, AWS
 
 Customer churn prediction in Telecom Industry is a core research topic in recent years. A huge amount of data is generated in Telecom Industry every minute. On the other hand, there is lots of development in data mining techniques. Customer churn has emerged as one of the major issues in Telecom Industry. Telecom research indicates that it is more expensive to gain a new customer than to retain an existing one. In order to retain existing customers, Telecom providers need to know the reasons of churn, which can be realized through the knowledge extracted from Telecom data.
 
+A database of customers who might churn allows the company to target those customers and start retention strategies that reduce the percentage of customer churning.
+
+-------------------------------------
+
 
 I would recommend trying Stochastic Gradient Boosting approach that usually gives robust and accurate results in such applications. If you look for better interpretability, then classification trees and logistic regression might be of help. Although in the latter case you will have to check on initial assumptions (e.g. multicollinearity, heteroscedasticity, etc.).The steps are well described, e.g. in Handbook of Statistical Analysis and Data Mining Applications by Robert Nisbet, John Elder IV and Gary Miner.
-
+------------------------------------
 
 Churn Analysis is used to predict behavior of customers who are most likely to change provided service, and to create specific campaigns to them
 
