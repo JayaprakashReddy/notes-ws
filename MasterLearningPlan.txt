@@ -1,0 +1,73 @@
+MasterLearningPlan
+
+Typesafe
+
+Scala: Odersky book(https://www.safaribooksonline.com/library/view/programming-in-scala/9780981531649/) , Scala cook book
+Akka:  (https://www.safaribooksonline.com/library/view/reactive-enterprise-with/9780133846904/) Effective Akka (https://www.safaribooksonline.com/library/view/effective-akka/9781449360061/)
+SBT:  (https://www.safaribooksonline.com/library/view/getting-started-with/9781783282678/)
+Play: (https://www.safaribooksonline.com/library/view/play-framework-essentials/9781783982400/pr06.html#ch00lvl1sec02)
+Spray:
+Slick:
+
+
+Bigdata
+
+Hadoop:Hadoop Application Architectures (https://www.safaribooksonline.com/library/view/hadoop-application-architectures/9781491910313/) , Realworld Hadoop Solutions (https://www.safaribooksonline.com/library/view/hadoop-real-world-solutions/9781849519120/)
+Spark:Learning Spark (https://www.safaribooksonline.com/library/view/learning-spark/9781449359034/ch04.html )
+Visualization: Tableau
+
+DataScience
+
+R: Machine learning with R ( https://www.safaribooksonline.com/library/view/machine-learning-with/9781782162148/ch01s04.html  )
+   R cookbook ( https://www.safaribooksonline.com/library/view/r-cookbook/9780596809287/ch04.html)
+   Introduction to Statistical Learning with Applications in R 
+Theory:Datascience for Business (https://www.safaribooksonline.com/library/view/data-science-for/9781449374273/)
+
+
+Spark: Advance Analytics with Spark (https://www.safaribooksonline.com/library/view/advanced-analytics-with/9781491912751/)
+
+       Some readup  :  http://www.cakesolutions.net/teamblogs/using-spark-to-analyse-akka-persistence-events-in-cassandra?utm_campaign=Technical%20Blogs&utm_content=12702324&utm_medium=social&utm_source=linkedin
+                       http://docs.prediction.io/
+
+Python:
+
+WebAnalytics
+
+Webanalytics a day by Kaushik (https://www.safaribooksonline.com/library/view/web-analytics-an/9780470130650/pr06.html)
+
+
+Webdevelopment with advanced UI
+
+MEAN stack  (https://www.safaribooksonline.com/library/view/mean-web-development/9781783983285/)
+
+
+Miscellaneous
+
+GIT (http://git-scm.com/book/en/v2)
+
+
+P1:Scala,WebAnalytics
+P2:Spark
+P3:Machine Learning
+P4:Hadoop
+
+
+
+Create a Learning Enviroment for all these things so that I can be in touch.
+
+Scala
+Akka
+SBT
+Play
+Spark
+Hadoop
+Tableau
+R
+
+
+-Morning Slot  -- Office Slot -- Evening Slot --- Else time -----
+Scala          -- Webanalytics-- Typesafe     --  Spark,Hadoop, Machine Learning
+Webanalytics
+MEAN
+
+

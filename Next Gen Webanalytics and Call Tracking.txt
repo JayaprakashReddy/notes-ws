@@ -1,0 +1,42 @@
+Project # 1	NextGen Web Analytics Platform, Sydney                    Jul 2014 – Till date                    
+Designation	Senior Developer
+Client	Delacon Pty Ltd. 
+                        
+Description	
+            Web analytics is the measurement, collection, analysis and reporting of web data for purposes of understanding and optimizing web usage.
+      Delacon is building a next generation web analytics platform extending its present 'Call Tracking Analytics' platform capability. The vision is to provide compelte integrated solution covering wide range usecases such as Online campaign management, Ad serving, recommendation engines etc in addition to web analytics by making use of advanced anlytics capabilities available with cutting edge bigdata tools.
+      
+       Webanalytics  : The result of online businesses’ success is always due to combination of many ideas & efforts, and the successful “coming together” of multiple marketing strategies and different traffic sources. To really get a grasp in truly learning what’s working for your site, a good analytics system just don’t give you aggregate data or “could be” data, but rather exactly what is happening on your site; separating out what is working from what is not.
+      Some Features :
+       1: clickstream analysis and to extract statistics around clicks, visitor counts
+       2: realtime prediction of the probability of an user will convert in the current session
+       3: A/B testing 
+
+      Generic Recommendation Engine :   Customizable recommendation system is built for the ecommerce web  applications .
+      Some Features
+       1.provides personalized recommendation for user of e-commerce applications with the following features by default: (i) Exclude out-of-stock items (ii) Provide recommendation to new users who sign up after the model is trained (iii) Recommend unseen items only.
+       2.Complimentary Purchase feature recommends the complimentary items which most user frequently buy at the same time with one or more items in the query.
+       3.Product Ranking feature sorts a list of products for a user based on his/her preference. This is ideal for personalizing the display order of product page, catalog, or menu items if you have large number of options. It creates engagement and early conversion by placing products that a user prefers on the top.
+       4.Similar Product feature recommends products that are "similar" to the input product(s). Similarity is not defined by user or item attributes but by users' previous actions.By default, it uses 'view' action such that product A and B are considered similar if most users who view A also view B. The template can be customized to support other action types such as buy, rate, like..etc.
+
+       Ad Serving : Online publishers can monetize their traffic and work directly  with the brands to drive their sales.Also enterprise lelvel brands can track, manage and optimize conversions by advertising over the web.
+     
+      Campaign Management : Mangement of marketing campaigns exclusively. and measuring their performance in lead generation 
+
+ This platform is built on Apache Spark, MLib, HBase, Scala and Spray
+
+Responsibilities
+       -> Contributed to building the framework for clickstream data analysis.
+       -> Contributed to the development of Machine Learning Server which used to build and deploy predictive engines.This server servers REST clients with
+          spray framwork in the backend. And predictive engines are built on typesafe reactive platfrom(Scala, Akka, SBT) .
+          These engines use HBase as data source for model training and evaluation.  
+       -> Major contributor in building different predictive enginesl. Example: e-Commerce recommendation  engine.
+       -> Contributed to the content experiments capability to the plaform with A/B and multivariate testing.
+       -> Contributed to integrating  AdServing capability with generic recommendation system.
+       -> Contribute to the creation of framework for online marketing campaign management.
+       -> Contributed to the development of features to the portal of 'Call Tracking Analytics' platform.
+       -> Involved in the development of web based reporting solution using the D3.js visualization library with Angular.js.
+
+
+Technologies Used : Java, Scala, Apche Spark, Mlib, HBase, Hadoop, Typsafe platform, Spray,Apache Tomcat, Apache Camel, D3.js, Angular.js 
+ 

@@ -1,0 +1,88 @@
+Project # 2	Analytics on Verizon CRM data for customer churn prediction , VDSI, India                     Jul 2013 – Apr 2014                     
+Designation	Developer
+Client	Verizon Data Services India
+Description  :
+	Customer churn prediction in Telecom Industry is a core research topic in recent years. A huge amount of data is generated in Telecom Industry every minute.
+Telecom research indicates that it is more expensive to gain a new customer than to retain an existing one. In order to retain existing customers, Telecom providers need to know the reasons for churn, which can be realized through the knowledge extracted from Telecom data.
+	Verizon is one of the biggest telecom operators in the USA. It sells fixed line and wireless telecom services. This project "Analytics on Verizon CRM data for customer churn prediction" aimed at creating a  database of customers who might churn  which allows the company to target those customers and start retention strategies that reduce the percentage of customer churning.
+         There is lots of development in data mining techniques. Churn prediction is a classification problem. Differen prediction models are developed using various data minings techniques to comapare for accuracy and performance on the test data.The following some conclusions on this evaluation process.
+         --> Decision trees are developed using the concept of divide-and-conquer. To evaluate a customer’s dataset by developing a decision tree the classification is done  by  altering the tree until a leaf node is attained.
+         --> Neural networks outdo decision trees for  prediction of churn through identification of more churners. Largest limitation of neural networks is that they hardly uncover patterns in an easily understandable manner. neural network based approach can predict customer churn with more accuracy. Accuracy that is achieved by neural networks fully outweighs the limitation that they need large volumes of data sets and a lot of time to calculate a considerable load for the predictor attributes.
+        --> Finally hybrid approach of the k-nearest neighbor algorithm and also the logistic regression method  used for constructing a binary classifier named KNN-LR gave promising results.
+
+Roles and Responsibilities
+--> Development of multitple churn prediction models using various data mining algorithms in R .
+--> Ingestion of the CRM data into Data Analysis enviroment. Hbase is target in this process.
+-->Data is cleaned using the MapReduce jobs.
+-->Feed the prediction model with the relavant data.
+-->Train and evauluate the classification models until the suitable is found which gives more accuracy and less overhead.
+-->Results of the prediction and the necessary attributes are loaded into Hive.
+-->Adhoc analysis is done on the data using Hive.
+-->Integrate the churn prediction results with the existing Customer Analytics visualization tools.
+
+Technologies Used :	Hadoop, MapReduce, Sqoop, HBase, Hive, R, Tableau, Amazon EC2
+
+
+
+----------------------------
+
+--customer churning
+
+Customer churn prediction in Telecom Industry is a core research topic in recent years. A huge amount of data is generated in Telecom Industry every minute. On the other hand, there is lots of development in data mining techniques. Customer churn has emerged as one of the major issues in Telecom Industry. Telecom research indicates that it is more expensive to gain a new customer than to retain an existing one. In order to retain existing customers, Telecom providers need to know the reasons of churn, which can be realized through the knowledge extracted from Telecom data.
+
+A database of customers who might churn allows the company to target those customers and start retention strategies that reduce the percentage of customer churning.
+
+Application of data analysis to churn is targeted towards prediction of whether an individualcustomer will churn, the time that churn is expectedto happen and reasons for which  the churn takes place. 
+
+--Neural Networks : ---------
+
+neural networks outdo decision trees for  prediction of churn through identification of more churners.nonlinear neural network outdoes the decision tree and logistic regression. 
+largest limitation of neural networks is that they hardly uncover patterns in an easily understandable manner. neural network based approach can predict customer churn with accuracy more than 92%. Accuracy that is achieved by neural networks fully outweighs the limitation that they need large volumes of data sets and a lot of time to calculate a considerable load for the predictor attributes.
+
+----Statistical Based Techniques (Linear regression, Logistic regression, Naive Bayes Classifier and K-nearest neighbors algorithm )-----
+
+hybrid approach of the k-nearest neighbor algorithm and also the logistic regression method for constructing a binary classifier named KNN-LR.
+
+
+--Decision Trees : ---------- 
+
+Decision trees are developed using the concept of divide-and-conquer. To evaluate a customer’s dataset by developing a decision tree the classification is done  by altering the tree until a leaf node is attained.
+
+decision tree algorithms outdo neural networks. In addition, they stated that to maximize the model performance it was recommended to adopt a combination of decision tree algorithms.
+
+--Covering Algorithms : ---------
+There are many covering algorithms families like AQ, CN2, RIPPER, and RULES family where rules are directly induced from a given set of training examples.
+
+Conclusion:
+Decision tree based techniques,  Neural Network based techniques and regression techniques are generally applied in customer churn
+decision tree based techniques specially C5.0 and CART have outperformed some of the existing data mining techniques such as regression in terms of accuracy. On other cases neural networks outdo the former method due to the size of datasets used and different feature selection methods applied
+
+
+-------------------------------------
+
+
+I would recommend trying Stochastic Gradient Boosting approach that usually gives robust and accurate results in such applications. If you look for better interpretability, then classification trees and logistic regression might be of help. Although in the latter case you will have to check on initial assumptions (e.g. multicollinearity, heteroscedasticity, etc.).The steps are well described, e.g. in Handbook of Statistical Analysis and Data Mining Applications by Robert Nisbet, John Elder IV and Gary Miner.
+------------------------------------
+
+Churn Analysis is used to predict behavior of customers who are most likely to change provided service, and to create specific campaigns to them
+
+
+
+----My Notes----------
+It is a classification problem. Differen prediction models are developed using various data minings techniques to comapare for accuracy and performance on the test data.
+Decision trees are developed using the concept of divide-and-conquer. To evaluate a customer’s dataset by developing a decision tree the classification is done  by altering the tree until a leaf node is attained.
+
+Neural networks outdo decision trees for  prediction of churn through identification of more churners. Largest limitation of neural networks is that they hardly uncover patterns in an easily understandable manner. neural network based approach can predict customer churn with more accuracy. Accuracy that is achieved by neural networks fully outweighs the limitation that they need large volumes of data sets and a lot of time to calculate a considerable load for the predictor attributes.
+
+Finally hybrid approach of the k-nearest neighbor algorithm and also the logistic regression method  used for constructing a binary classifier named KNN-LR gave promising results.
+
+
+References: 
+
+http://www.analyticbridge.com/forum/topics/how-to-develop-churn-prediction-model-for-telecom-company
+
+http://www.academia.edu/7675641/A_Survey_On_Data_Mining_Techniques_In_Customer_Churn_Analysis_For_Telecom_Industry
+
+
+
+

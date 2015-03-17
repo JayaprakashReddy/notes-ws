@@ -1,0 +1,30 @@
+First time
+
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+	
+create a new repository in github (https://github.com/JayaprakashReddy/myscala.git)
+git init
+git add -A
+git commit -m "some changes"
+git remote add origin https://github.com/JayaprakashReddy/myscala.git
+git remote -v
+git push -u origin master
+
+
+
+For updates
+
+
+git add -A
+git commit -m "some changes"
+git push -u origin master
+
+
+for pulling from github  to local repository
+
+git pull origin master
+
+
+jayaprak**/ja**1
+

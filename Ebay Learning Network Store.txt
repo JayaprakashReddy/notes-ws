@@ -1,0 +1,91 @@
+Project # 3	EBay Learning Network Store, eBay IPC, Chennai                        March 2012 – Jun 2013          
+Designation	Developer
+Client	EBay Inc.
+Description	Recommender systems typically produce a list of recommendations in one of two ways - through collaborative or content-based filtering. EBay India is an e-commerce web application meant for online shoppers in India.
+      These are some of the features of the system
+      -->Suggest items to users which they are more likely to be interested in .
+      -->Complimentary Purchase feature recommends the complimentary items which most users frequently buy together.
+      -->Similar Product feature gives content based recommendation to the user.
+
+Responsibilities
+-->Development of 
+•	Using Sqoop and scripts to move data to personalization system.
+•	Tracking user activity with browser.
+•	Ingesting the logs to HBase clusters using Flume.
+•	Building model for analysis with Mahout.
+•	Running MapReduce jobs for updating the models offline.
+Technologies Used	Hadoop, Mahout, HBase, Flume, Sqoop
+
+
+------------
+Adapting the input to recommender algorithms is usually quite a problem-specific process. Discovering the best recommender engine to apply to the input data is likewise specific to each context. It inevitably involves hands-on exploration, experimentation, and evaluation on real problem data.
+
+You will try an approach, collect data, understand the results, and repeat many times.
+
+Both user-based and item-based recommendors are used 
+
+Different Algorithms : GenericUserBasedRecommender, GenericItemBasedRecommender, SlopeOneRecommender, SVDRecommender, TreeClusteringRecommender
+
+Similarity metrics : LogLikelihoodSimilarity, 
+
+Deploying a non-distributed recommender engine based on this data could prove difficult. A solution lies in using many small machines, not one big one, for all the reasons that using one big machine is undesirable. To be clear, distributing a computation doesn’t make it more efficient. On the contrary, it usually makes it require significantly more resources.It should be noted that such large, distributed computations are necessarily performed offline, not in real time in response to user requests. 
+
+
+Hadoop, as noted before, is a popular distributed computing framework that includes two components of interest: a distributed file system, HDFS, and an implementation of the MapReduce paradigm.
+
+simple recommender algorithm will take five MapReduce stages
+The first MapReduce will construct user vectors:  “userID: itemID1 itemID2 itemID3 …”.   =>  “userID,itemID,preference”
+                                                                                             98955 / [590:1.0, 22:1.0, 9059:1.0]
+The next phase of the computation is another MapReduce that uses the output of the first MapReduce to compute co-occurrences.
+
+---------GenericUserBasedRecommender
+Key Parameters :
+ • User similarity metric
+ • Neighborhood definition and size
+Key features :
+ • “Conventional” implementation
+ • Fast when number of users is relatively smaller
+
+---------GenericItemBasedRecommender
+
+Key Parameters
+• Item similarity metric
+Key features
+• Fast when number of items is relatively smaller
+• Useful when an external notion of item similarity is available
+---------SlopeOneRecommender
+Key Parameters
+• Diff storage strategy
+Key features
+• Recommendations and updates fast at runtime
+• Requires large precomputation
+• Suitable when number of items is relatively small
+---------SVDRecommender
+Key Parameters
+• Number of features
+Key features
+• Good results
+• Requires large precomputation
+---------KnnItemBasedRecommender
+Key Parameters
+• Number of means (“k”)
+• Item similarity metric
+. Neighborhood size
+Key features
+• Good when number of items is relatively smaller
+
+---------TreeClusteringRecommender
+Key Parameters
+• Number of clusters
+• Cluster similarity definition
+• User similarity metric
+Key features
+• Recommendations are fast at runtime
+• Requires large precomputation
+• Good when number of users is relatively smaller
+
+
+
+testing at the end.
+
+
