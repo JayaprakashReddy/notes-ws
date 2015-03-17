@@ -26,19 +26,20 @@ Both user-based and item-based recommendors are used
 
 Different Algorithms : GenericUserBasedRecommender, GenericItemBasedRecommender, SlopeOneRecommender, SVDRecommender, TreeClusteringRecommender
 
-Similarity metrics : LogLikelihoodSimilarity, 
+Similarity metrics : LogLikelihood,  Tanimoto, Pearson, Euclidean
 
-Deploying a non-distributed recommender engine based on this data could prove difficult. A solution lies in using many small machines, not one big one, for all the reasons that using one big machine is undesirable. To be clear, distributing a computation doesn’t make it more efficient. On the contrary, it usually makes it require significantly more resources.It should be noted that such large, distributed computations are necessarily performed offline, not in real time in response to user requests. 
+Finally a user-based recommender using a Euclidean distance-based similarity metric and a nearest-2 neighborhood definition is chosen.
+
+IDRescorer interface, a practical tool that can be used to modify results in ways specific to a problem domain.That is excluding recommendations
+ based known data .
+ 
+tested performance and found it acceptable (about 500 ms per recommendation),
+we constructed a deployable version of the recommender engine and automatically
+created a web-enabled application around it using Mahout. We briefly
+examined how to deploy and access this component via HTTP and SOAP.
 
 
-Hadoop, as noted before, is a popular distributed computing framework that includes two components of interest: a distributed file system, HDFS, and an implementation of the MapReduce paradigm.
-
-simple recommender algorithm will take five MapReduce stages
-The first MapReduce will construct user vectors:  “userID: itemID1 itemID2 itemID3 …”.   =>  “userID,itemID,preference”
-                                                                                             98955 / [590:1.0, 22:1.0, 9059:1.0]
-The next phase of the computation is another MapReduce that uses the output of the first MapReduce to compute co-occurrences.
-
----------GenericUserBasedRecommender
+--------GenericUserBasedRecommender
 Key Parameters :
  • User similarity metric
  • Neighborhood definition and size
@@ -83,3 +84,35 @@ Key features
 • Recommendations are fast at runtime
 • Requires large precomputation
 • Good when number of users is relatively smaller
+
+
+
+Deploying a non-distributed recommender engine based on this data could prove difficult. A solution lies in using many small machines, not one big one, for all the reasons that using one big machine is undesirable. To be clear, distributing a computation doesn’t make it more efficient. On the contrary, it usually makes it require significantly more resources.It should be noted that such large, distributed computations are necessarily performed offline, not in real time in response to user requests. 
+
+
+Hadoop, as noted before, is a popular distributed computing framework that includes two components of interest: a distributed file system, HDFS, and an implementation of the MapReduce paradigm.
+
+simple recommender algorithm will take five MapReduce stages
+The first MapReduce will construct user vectors:  “userID: itemID1 itemID2 itemID3 …”.   =>  “userID,itemID,preference”
+                                                                                             98955 / [590:1.0, 22:1.0, 9059:1.0]
+The next phase of the computation is another MapReduce that uses the output of the first MapReduce to compute co-occurrences.
+
+It’s now possible to use MapReduce to multiply the user vectors computed in step 1,
+and the co-occurrence matrix from step 2, to produce a recommendation vector from
+which the algorithm can derive recommendations
+
+
+Translating to MapReduce:
+matrix multiplication by partial products
+
+Translating to MapReduce: making recommendations
+The output ultimately exists as one or more files stored on an HDFS instance, as a
+compressed text file. The lines in the text file are of this form:
+3 [103:24.5,102:18.5,106:16.5]
+
+
+Each user ID is followed by a comma-delimited list of item IDs that have been recommended
+(followed by a colon and the corresponding entry in the recommendation
+vector, for what it’s worth). This output can be retrieved from HDFS, parsed, and used
+in an application. Note that the output from Mahout will be compressed using gzip, to
+save space.
