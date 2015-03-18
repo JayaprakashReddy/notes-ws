@@ -1,20 +1,28 @@
 Project # 3	EBay Learning Network Store, eBay IPC, Chennai                        March 2012 – Jun 2013          
 Designation	Developer
 Client	EBay Inc.
-Description	Recommender systems typically produce a list of recommendations in one of two ways - through collaborative or content-based filtering. EBay India is an e-commerce web application meant for online shoppers in India.
-      These are some of the features of the system
-      -->Suggest items to users which they are more likely to be interested in .
-      -->Complimentary Purchase feature recommends the complimentary items which most users frequently buy together.
-      -->Similar Product feature gives content based recommendation to the user.
+Description	 EBay India is an e-commerce web application meant for online shoppers in India. Recommendation system is built for this site to drive more conversions
+                 These are some of the features of a typical recommendation system
+                 -->Suggest items to users which they are more likely to be interested in based on the user's preference profile .
+                 -->Complimentary purchase feature recommends the complimentary items which most users frequently buy together.
+                 -->Similar Product feature gives content based recommendation to the user.
+                 -->Also take care to prevent from recommending compeltely irrelevant items to the user.
+
+                User preference data is stored in personalization system this data is used for webanalytics purposes is also souce for recommendation engine.Adapting the input to recommender algorithms is usually quite a problem-specific process. Discovering the best recommender engine to apply to the input data is likewise specific to each context. It inevitably involves hands-on exploration, experimentation, and evaluation on real problem data. And repeat it many times.
+
+                Hadoop is a popular distributed computing framework that includes two components of interest: a distributed file system, HDFS, and an implementation of the MapReduce paradigm. A simple recommender algorithm will take five MapReduce stages. Mahout machine learning library avaible for use with hadoop is used to build both user-based and item-based recommendors. Models are evaluated  using the available recommendors with the library such as GenericUserBasedRecommender, GenericItemBasedRecommender, SlopeOneRecommender, SVDRecommender and TreeClusteringRecommender. Different similarity metrics such as LogLikelihood,  Tanimoto, Pearson and Euclidean are  tested to build the right model for the problem. A user-based recommender using a Euclidean distance-based similarity metric and a nearest-2 neighborhood definition gave promising results with accuracy. Recommendor's results are stored in HBase and served to the clent via HTTP and SOAP
+
+
 
 Responsibilities
--->Development of 
-•	Using Sqoop and scripts to move data to personalization system.
-•	Tracking user activity with browser.
-•	Ingesting the logs to HBase clusters using Flume.
-•	Building model for analysis with Mahout.
-•	Running MapReduce jobs for updating the models offline.
-Technologies Used	Hadoop, Mahout, HBase, Flume, Sqoop
+-->User activity with browser is tracked by webanalytics tools and user profile is created in personalization system.
+-->Developed sqoop scripts to move this preference data to HDFS
+-->Developed the Mapreduce jobs which are used to clean the data. In total MapReduce jobs are run in five stages to extract the recommendations.
+-->Used Mahout library to build and evaluate models using various available algorithms.
+-->Strived to achieve performance benchmarks. Recommendation engine performance found to be  acceptable (about 500 ms per recommendation)
+-->Developed Recommendation server to serve REST and SOAP clients.
+
+Technologies Used :	Hadoop, Mahout, Sqoop, HBase Tomcat, REST Webservices
 
 
 ------------
