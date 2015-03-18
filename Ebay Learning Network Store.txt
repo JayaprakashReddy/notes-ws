@@ -15,14 +15,14 @@ Description	 EBay India is an e-commerce web application meant for online shoppe
 
 
 Responsibilities
--->User activity with browser is tracked by webanalytics tools and user profile is created in personalization system.
--->Developed sqoop scripts to move this preference data to HDFS
+-->User activity with browser is tracked by webanalytics tools and user profile is created in personalization system based on MongoDB datastore
+-->MongoDB-Hadoop connector used to import data into HDFS
 -->Developed the Mapreduce jobs which are used to clean the data. In total MapReduce jobs are run in five stages to extract the recommendations.
 -->Used Mahout library to build and evaluate models using various available algorithms.
 -->Strived to achieve performance benchmarks. Recommendation engine performance found to be  acceptable (about 500 ms per recommendation)
 -->Developed Recommendation server to serve REST and SOAP clients.
 
-Technologies Used :	Hadoop, Mahout, Sqoop, HBase Tomcat, REST Webservices
+Technologies Used :	MongoDB, Hadoop, Mahout, Sqoop, HBase Tomcat, REST Webservices
 
 
 ------------

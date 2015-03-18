@@ -36,7 +36,8 @@ Responsibilities
        -> Contribute to the creation of framework for online marketing campaign management.
        -> Contributed to the development of features to the portal of 'Call Tracking Analytics' platform.
        -> Involved in the development of web based reporting solution using the D3.js visualization library with Angular.js.
+       -> Git is used as source control system.
 
 
-Technologies Used : Java, Scala, Apche Spark, Mlib, HBase, Hadoop, Typsafe platform, Spray,Apache Tomcat, Apache Camel, D3.js, Angular.js 
+Technologies Used : Java, Scala, Apche Spark, Mlib, HBase, Hadoop, Typsafe platform, Spray,Apache Tomcat, Apache Camel, D3.js, Angular.js , Git
  
